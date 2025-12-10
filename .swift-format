@@ -1,0 +1,31 @@
+{
+    "version": 1,
+    "lineLength": 108,
+    "indentation": {
+        "spaces": 4
+    },
+    "maximumBlankLines": 2,
+    "respectsExistingLineBreaks": true,
+    "lineBreakBeforeControlFlowKeywords": false,
+    "lineBreakBeforeEachArgument": false,
+    "lineBreakBeforeEachGenericRequirement": false,
+    "lineBreakBetweenDeclarationAttributes": false,
+    "lineBreakAroundMultilineExpressionChainComponents": false,
+    "prioritizeKeepingFunctionOutputTogether": true,
+    "indentConditionalCompilationBlocks": true,
+    "indentSwitchCaseLabels": false,
+    "indentBlankLines": false,
+    "spacesBeforeEndOfLineComments": 2,
+    "spacesAroundRangeFormationOperators": false,
+    "multilineTrailingCommaBehavior": "alwaysUsed",
+    "multiElementCollectionTrailingCommas": true,
+    "reflowMultilineStringLiterals": "never",
+    "fileScopedDeclarationPrivacy": {
+        "accessLevel" : "private"
+    },
+    "rules": {
+        "OrderedImports": true,
+        "DoNotUseSemicolons": true
+    }
+}
+
