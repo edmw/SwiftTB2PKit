@@ -12,6 +12,15 @@ struct SwiftTB2PKitTests {
         #expect(solution == "U2 B' U F L' U2 L' B' U L U R2 U' F2 B2 U' B2 R2 U' R2 F2 U L2 U")
     }
 
+    @Test func testSolveSuperflip() {
+        _ = TB2P.tables
+        let facelets = "UBULURUFURURFRBRDRFUFLFRFDFDFDLDRDBDLULBLFLDLBUBRBLBDB"
+        let solver = try! TB2PSolver(facelets: facelets)
+        let solution = try! solver.search()
+        // non-optimal solution
+        #expect(solution == "R L F U D' R2 F2 R F B D B2 U R2 U L2 B2 D F2 B2 L2 F2 U2")
+    }
+
     @Test func testRandom() {
         let facelets = TB2P.randomCube()
         let faceCube = try! TB2PFaceCube(cubeString: facelets)
